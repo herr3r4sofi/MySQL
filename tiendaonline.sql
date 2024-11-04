@@ -42,7 +42,6 @@ Estado VARCHAR(50),
 Total DECIMAL(10,2),
 FOREIGN KEY (ID_Cliente) REFERENCES Clientes (ID_Cliente)
 );
-DROP TABLE Pedidos;
 
 -- relacion N:M
 CREATE TABLE Pedidos_Productos(

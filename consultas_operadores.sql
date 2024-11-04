@@ -20,15 +20,14 @@ SELECT ID_Pedido, Fecha_Pedido, Total FROM Pedidos;
 SELECT Nombre, Email, Fecha_Registro
 FROM Clientes
 WHERE Fecha_Registro > '2024-01-10';
-
 /*
 Descripción: Esta consulta devuelve todos los productos cuyo stock
 es mayor que 10 unidades, mostrando el nombre, el precio, y la cantidad en stock.
 */
+
 SELECT Nombre, Precio, Stock
 FROM Productos
 WHERE Stock > 10;
-
 /*
 Descripción: Esta consulta obtiene todos los pedidos cuyo total es mayor a $500,
 mostrando el ID del pedido, la fecha en que se realizó y el total.
@@ -37,8 +36,8 @@ SELECT ID_Pedido, Fecha_Pedido, Total
 FROM Pedidos
 WHERE Total > 500;
 
--- JOIN 
 
+-- JOIN 
 /* Descripción:
  JOIN conecta las tablas Clientes, Pedidos, Pedidos_Productos, y Productos.
 La consulta devuelve el nombre del cliente, el nombre del producto que compró, la cantidad adquirida y la fecha en que se realizó el pedido.*/
